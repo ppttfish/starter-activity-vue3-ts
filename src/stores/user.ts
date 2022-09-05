@@ -4,8 +4,6 @@ import { defineStore } from 'pinia'
 const localToken = localStorage[LOCAL_TOKEN] || ''
 const localUser = localStorage[LOCAL_USER] || '{}'
 
-console.log('localUser', localUser)
-
 export const useUserStore = defineStore({
   id: 'user',
   state: () => ({

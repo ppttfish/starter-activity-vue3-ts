@@ -24,7 +24,6 @@ httpIntance.interceptors.response.use(
   },
   // 请求失败提示
   (error) => {
-    console.log('error', error)
     return Promise.reject(new Error(error))
   }
 )
